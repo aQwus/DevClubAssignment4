@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $# -eq 0 ]; then
+if [ $# -lt 2 ]; then
 	exit 1
 else
 	dir=$1;
@@ -12,8 +12,6 @@ else
 
 	if [ $# -gt 1 ]; then
 		ext=*$2
-	else 
-	    exit 1
 	fi
 fi
 
